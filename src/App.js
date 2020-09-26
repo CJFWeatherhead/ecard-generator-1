@@ -1,10 +1,12 @@
 import React from 'react'
 
-import Home from './components/Home'
+import Home from './Home'
+import QuoteSelect from './quoteSelect'
 
 const App = () => (
     <div className="app">
         <Home></Home>
+        <QuoteSelect></QuoteSelect>
     </div>
 )
 
