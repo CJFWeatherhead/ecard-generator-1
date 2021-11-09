@@ -1,11 +1,86 @@
+:root {
+    --btn-color: #4BA1F0;
+}
+
 .home {
-    background-color: #9E2BD3;
-    color: azure;
-    font-family: 'Tangerine', cursive;
-    font-size: 50px;
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    font-family: sans-serif;
+    font-size: 2.5em;
+}
+
+#heading {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+#home-card {
+    align-self: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 25vh;
+    
+    background: linear-gradient(90deg, #4197E6 0%, rgba(75, 161, 240, 0.68) 100%);
+    border: 0.0125px solid #2D52D3;
+    box-shadow: 0px 8px 20px 8px rgba(45, 82, 211, 0.6);
+    border-radius: 31px; 
+}
+
+#code-lines {
+    position: relative;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.stripe {
+    height: 0.40em;
+
+    margin-block: 0.15em;
+
+    background-color: #2D52D3;
+}
+
+#code-stripe-1 {
+    width: 5.275em;
+}
+
+#code-stripe-2 {
+    width: 6.23em;
+}
+
+#code-stripe-3 {
+    width: 4.3em;
+}
+
+#code-stripe-4 {
+    width: 7em;
+}
+
+.btn {
+    width: 9.025em;
+    height: 2.15em;
+
+    padding: 0.3em 0.5em;
+    margin: 0 0.03em 0 0.05em;
+    
+    border-radius: 0.25em;
+    background-color: var(--btn-color);
+    border: 0.1em solid var(--btn-color);
+    cursor: pointer;
+    text-align: center;
+
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.50em;
 }
