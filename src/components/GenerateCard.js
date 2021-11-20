@@ -1,8 +1,8 @@
 import React from 'react'
 
-import './SelectImage.css'
+import './GenerateCard.css'
 
-function SelectImage() {
+function GenerateCard() {
     return (
         <div className="card-background">
             <header id="progress-headings">
@@ -11,9 +11,14 @@ function SelectImage() {
                 <h3 className="progress-heading">Download card</h3>
                 <h3 className="progress-heading">Share it!</h3>
             </header>
-            <div id="progress-indicator"></div>
+            <div id="progress-indicator">
+                <div className="progress-milestone"></div>
+                <div className="progress-milestone"></div>
+                <div className="progress-milestone"></div>
+                <div className="progress-milestone"></div>
+            </div>
         </div>
     )
 }
 
-export default SelectImage
+export default GenerateCard
