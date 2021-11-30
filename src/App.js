@@ -2,8 +2,8 @@ import React from 'react'
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import Home from './components/Home'
-import GenerateCard from './components/GenerateCard'
+import Home from './pages/Home'
+import GenerateCard from './pages/GenerateCard'
 
 const App = () => (
     <Router>
