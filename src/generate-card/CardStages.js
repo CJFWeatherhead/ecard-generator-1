@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
-import Image from './generation-stages/selectImage'
-import Message from './generation-stages/selectMessage'
+import Image from './generation-stages/image/selectImage'
+import Message from './generation-stages/message/selectMessage'
 import './CardStages.css'
 
 function CardStages(props) {

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 
-import { CardStageContext } from '../../contexts/CardStageContext'
+import { CardStageContext } from '../../../contexts/CardStageContext'
 import './selectImage.css'
 
 function selectImage() {
