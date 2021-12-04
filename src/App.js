@@ -10,7 +10,7 @@ const App = () => (
         <div className="app">
             <Switch>
                 <Route path="/" exact component={Home} />
-                <Route path="/select-background" component={GenerateCard} />
+                <Route path="/generate-ecard" component={GenerateCard} />
             </Switch>
         </div>
     </Router>

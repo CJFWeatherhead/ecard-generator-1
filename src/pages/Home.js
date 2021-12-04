@@ -16,7 +16,7 @@ const Home = () => (
                 </div>
             </div>
         </main>
-        <Link to="/select-background">
+        <Link to="/generate-ecard">
             <button className="btn">Generate card!</button>
         </Link>
     </div>

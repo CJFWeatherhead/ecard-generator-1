@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 
 import { CardStageContext } from '../../../contexts/CardStageContext'
-import MessageCard from './MessageCard'
+import ChoiceCard from '../ChoiceCard'
 import './selectMessage.css'
 
 function selectMessage() {
@@ -19,10 +19,9 @@ function selectMessage() {
         <div id="card-message-options">
             <h1>Select a message</h1>
             <div id="message-cards">
-                {messagesAndGreetings.map(msg => {
-                    return <MessageCard key={msg.length} text={msg} />
-                    {msg}
-                })}
+                {messagesAndGreetings.map(msg => (
+                    <ChoiceCard key={Math.random() * msg.length} text={msg} />
+                ))}
             </div>
             <button className="btn" onClick={() => {nextStage("img")}}>Next stage</button>
         </div>

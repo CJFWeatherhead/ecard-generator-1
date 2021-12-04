@@ -1,3 +1,24 @@
-h1 {
+#card-image-background-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#card-image-background-options h1 {
     text-align: center;
+}
+
+#background-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.30em;
+}
+
+#card-image-background-options .btn {
+    align-self: flex-end;
+
+    margin-top: 1em;
+
+    font-size: 0.8em;
+    color: #fff;
 }
