@@ -1,4 +1,8 @@
 .message-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: calc(fit-content + 0.1em);
     height: calc(fit-content + 0.1em);
 

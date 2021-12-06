@@ -50,6 +50,7 @@ function selectImage() {
                 }
             </div>
             <button className="btn" onClick={() => {stageChange("msg")}}>Previous stage</button>
+            <button className="btn" onClick={() => {stageChange("download")}}>Next stage</button>
         </div>
     )
 }

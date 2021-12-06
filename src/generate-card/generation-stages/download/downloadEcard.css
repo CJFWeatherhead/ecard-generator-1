@@ -1,0 +1,32 @@
+#download-generated-ecard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+#final-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 18em;
+    height: 6em;
+
+    background-color: #c0ffee;
+    border-radius: 0.50em;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+#download-generated-ecard .btn {
+    margin-top: 1em;
+    
+    font-size: 0.8em;
+    color: #fff;
+}
+
+#stageBtn {
+    align-self: flex-end;
+}
