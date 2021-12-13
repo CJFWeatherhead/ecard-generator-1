@@ -23,7 +23,7 @@ function selectMessage() {
                     <ChoiceCard key={Math.random() * msg.length} text={msg} />
                 ))}
             </div>
-            <button className="btn" onClick={() => {nextStage("img")}}>Next stage</button>
+            <button id="msg-stage-btn" className="btn" onClick={() => {nextStage("img")}}>Next stage</button>
         </div>
     )
 }

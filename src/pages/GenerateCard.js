@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import gsap from 'gsap'
 
 import CardStages from '../generate-card/CardStages'
 import { CardStageContext } from '../contexts/CardStageContext'
@@ -9,10 +10,17 @@ function GenerateCard() {
 
     let [width, setWidth] = useState({width: "21%"})
 
+    
     const [firstMilestone, setFirstMilestone] = useState("progress-milestone progress-milestone__color")
     const [secondMilestone, setSecondMilestone] = useState("progress-milestone")
     const [thirdMilestone, setThirdMilestone] = useState("progress-milestone")
     const [fourthMilestone, setFourthMilestone] = useState("progress-milestone")
+
+    const indicator = document.getElementById("progress-indicator-color")
+
+    useEffect(() => {
+        gsap.to(indicator, { duration: 1.5, width: width.width })
+    }, [width])
 
     const switchComponent = (componentName) => {
         progressBarStyles(componentName)
@@ -59,10 +67,10 @@ function GenerateCard() {
             <div id="progress-indicator">
                 <div
                     id="progress-indicator-color"
-                    style={width}>
+                    style={{ width: width }}>
                 </div>
                 <div className={firstMilestone}></div>
-                <div className={secondMilestone}></div>
+                <div id="second" className={secondMilestone}></div>
                 <div className={thirdMilestone}></div>
                 <div className={fourthMilestone}></div>
             </div>
