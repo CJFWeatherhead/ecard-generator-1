@@ -8,16 +8,28 @@
 }
 
 #final-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 
     width: 18em;
     height: 6em;
-
+    
     background-color: #c0ffee;
     border-radius: 0.50em;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+#final-card h3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 50%;
+    height: 50%;
+    margin: auto;
+
+    text-align: center;
 }
 
 #download-generated-ecard .btn {
