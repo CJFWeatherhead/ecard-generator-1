@@ -19,7 +19,8 @@ function ChoiceCard(props) {
     return (
         <div
             style={{
-                    backgroundColor: props.color, 
+                    color: props.color,
+                    backgroundImage: props.backgroundImage,
                     height: props.height, 
                     width: props.width
                     }}
