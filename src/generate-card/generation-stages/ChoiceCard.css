@@ -15,5 +15,29 @@
 }
 
 .selected {
-    border: 0.2em solid #c0ffee;
+    position: relative;
 }
+
+.selected::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    margin: 0.3em;
+    background-color: hsl(0, 0%, 90%);
+    z-index: 2;
+  }
+  
+  .selected::after {
+    content: '';
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    top: 0;
+    right: 0;
+    background-color: hsl(0, 0%, 60%);
+    border-radius: 0 0.3em 0 50%;
+  }
