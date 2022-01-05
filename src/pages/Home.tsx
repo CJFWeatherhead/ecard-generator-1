@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import './Home.css'
 
-const Home = () => (
+const Home = (): JSX.Element => (
     <div className="home">
         <main id="heading">
             <h1>Generate <br /> your own e-card</h1>

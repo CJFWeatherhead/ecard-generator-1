@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './pages/Home'
 import GenerateCard from './pages/GenerateCard'
 
-const App = () => (
+const App = (): JSX.Element => (
     <Router>
         <div className="app">
             <Switch>

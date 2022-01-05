@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import domtoimage from 'dom-to-image'
+const domtoimage = require("dom-to-image")
 
 import { CardStageContext } from '../../../contexts/CardStageContext'
 import './downloadEcard.css'
@@ -11,7 +11,7 @@ function downloadEcard() {
     const downloadCard = () => {
         const node = document.getElementById("final-card")
 
-        domtoimage.toPng(node).then(dataUrl => {
+        domtoimage.toPng(node).then((dataUrl: string) => {
             let link = document.createElement("a")
             link.download = "my-custom-ecard.png"
             link.href = dataUrl

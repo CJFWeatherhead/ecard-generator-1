@@ -8,7 +8,7 @@ import './GenerateCard.css'
 function GenerateCard() {
     const [cardComponent, changeCardComponent] = useState("msg")
 
-    let [width, setWidth] = useState({width: "21%"})
+    let [indicatorWidth, setWidth] = useState({widthLength: "21%"})
 
     
     const [firstMilestone, setFirstMilestone] = useState("progress-milestone progress-milestone__color")
@@ -19,43 +19,43 @@ function GenerateCard() {
     const indicator = document.getElementById("progress-indicator-color")
 
     useEffect(() => {
-        gsap.to(indicator, { duration: 1.5, width: width.width })
-    }, [width])
+        gsap.to(indicator, { duration: 1.5, width: indicatorWidth.widthLength })
+    }, [indicatorWidth])
 
-    const switchComponent = (componentName) => {
+    const switchComponent = (componentName: string): void => {
         progressBarStyles(componentName)
         changeCardComponent(componentName)
     }
 
-    const progressBarStyles = (componentStage) => {
+    const progressBarStyles = (componentStage: string) => {
         switch(componentStage) {
             case "msg":
                 setFirstMilestone("progress-milestone progress-milestone__color")
                 setSecondMilestone("progress-milestone")
                 setThirdMilestone("progress-milestone")
                 setFourthMilestone("progress-milestone")
-                setWidth({width: "21%"})
+                setWidth({widthLength: "21%"})
                 break
             case "img":
                 setFirstMilestone("progress-milestone progress-milestone__color")
                 setSecondMilestone("progress-milestone progress-milestone__color")
                 setThirdMilestone("progress-milestone")
                 setFourthMilestone("progress-milestone")
-                setWidth({width: "41%"})
+                setWidth({widthLength: "41%"})
                 break
             case "download":
                 setFirstMilestone("progress-milestone progress-milestone__color")
                 setSecondMilestone("progress-milestone progress-milestone__color")
                 setThirdMilestone("progress-milestone progress-milestone__color")
                 setFourthMilestone("progress-milestone")
-                setWidth({width: "61%"})
+                setWidth({widthLength: "61%"})
                 break
             case "share":
                 setFirstMilestone("progress-milestone progress-milestone__color")
                 setSecondMilestone("progress-milestone progress-milestone__color")
                 setThirdMilestone("progress-milestone progress-milestone__color")
                 setFourthMilestone("progress-milestone progress-milestone__color")
-                setWidth({width: "81%"})
+                setWidth({widthLength: "81%"})
                 break
             default:
                 console.log("Something weird is happening right now!!")
@@ -67,7 +67,7 @@ function GenerateCard() {
             <div id="progress-indicator">
                 <div
                     id="progress-indicator-color"
-                    style={{ width: width }}>
+                    style={{ width: indicatorWidth.widthLength }}>
                 </div>
                 <div className={firstMilestone}></div>
                 <div id="second" className={secondMilestone}></div>
