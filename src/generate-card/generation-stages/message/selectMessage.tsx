@@ -4,11 +4,11 @@ import { CardStageContext } from '../../../contexts/CardStageContext'
 import ChoiceCard from '../ChoiceCard'
 import './selectMessage.css'
 
-function selectMessage() {
+function selectMessage(): JSX.Element {
     // context provider defined in GenerateCard component
     const nextStage = useContext(CardStageContext)
 
-    const messagesAndGreetings = [
+    const messagesAndGreetings: string[] = [
         "It's been a while, let's catch up",
         "Happy Birthday!",
         "Get well soon",

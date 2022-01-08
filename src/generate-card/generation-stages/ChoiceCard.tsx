@@ -2,7 +2,15 @@ import React, { useState } from 'react'
 
 import './ChoiceCard.css'
 
-function ChoiceCard(props) {
+interface ChoiceCardProps {
+    color?: string
+    backgroundImage?: string
+    height?: string
+    width?: string
+    text: string
+}
+
+function ChoiceCard(props: ChoiceCardProps) {
     let [classes, setClasses] = useState("message-card")
     let [cardSelected, setCardSelected] = useState(true)
 

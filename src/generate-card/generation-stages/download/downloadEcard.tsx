@@ -4,11 +4,11 @@ const domtoimage = require("dom-to-image")
 import { CardStageContext } from '../../../contexts/CardStageContext'
 import './downloadEcard.css'
 
-function downloadEcard() {
+function downloadEcard(): JSX.Element {
     // context provider defined in GenerateCard component
     const stageChange = useContext(CardStageContext)
 
-    const downloadCard = () => {
+    const downloadCard = (): void => {
         const node = document.getElementById("final-card")
 
         domtoimage.toPng(node).then((dataUrl: string) => {

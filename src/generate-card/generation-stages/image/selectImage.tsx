@@ -4,11 +4,17 @@ import { CardStageContext } from '../../../contexts/CardStageContext'
 import ChoiceCard from '../ChoiceCard'
 import './selectImage.css'
 
-function selectImage() {
+interface BackgroundObject {
+    backgroundImage: string;
+    name: string;
+    selected: boolean;
+}
+
+function selectImage(): JSX.Element {
     // context provider defined in GenerateCard component
     const stageChange = useContext(CardStageContext)
 
-    const backgrounds = [
+    const backgrounds: BackgroundObject[] = [
         {
             backgroundImage: "linear-gradient(326deg, #861657 0%, #ffa69e 74%)",
             name: "Edison's Broken Bulb",
@@ -52,7 +58,7 @@ function selectImage() {
                             text={background.name}
                             color={"#fff"}
                             backgroundImage={background.backgroundImage}
-                            imageSelected={background.selected}
+                            // imageSelected={background.selected}
                         />
                     ))
                 }
