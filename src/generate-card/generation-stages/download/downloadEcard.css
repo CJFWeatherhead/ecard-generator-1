@@ -13,7 +13,7 @@
     width: 18em;
     height: 6em;
     
-    background-color: #c0ffee;
+    background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
     border-radius: 0.50em;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
