@@ -16,12 +16,12 @@ function selectImage(): JSX.Element {
 
     const backgrounds: BackgroundObject[] = [
         {
-            backgroundImage: "https://via.placeholder.com/350",
+            backgroundImage: "url(https://via.placeholder.com/350)",
             name: "Image1",
             selected: false
         },
         {
-            backgroundImage: "https://via.placeholder.com/340)",
+            backgroundImage: "url(https://pixabay.com/get/g1d3134ba5fefbd05dfea67e0c407c73563409ddebdd1750a4e29fb5dad1b424e285303dfa652d691868828d313cd344b8a8c1e1f623302906c01c7fe87034f17_640.jpg)",
             name: "Image2",
             selected: false
         },
