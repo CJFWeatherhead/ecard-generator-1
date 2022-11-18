@@ -16,13 +16,13 @@ function selectImage(): JSX.Element {
 
     const backgrounds: BackgroundObject[] = [
         {
-            backgroundImage: "linear-gradient(326deg, #861657 0%, #ffa69e 74%)",
-            name: "Edison's Broken Bulb",
+            backgroundImage: "https://via.placeholder.com/350",
+            name: "Image1",
             selected: false
         },
         {
-            backgroundImage: "linear-gradient(326deg, #a4508b 0%, #5f0a87 94%)",
-            name: "Obama's Resignation",
+            backgroundImage: "https://via.placeholder.com/340)",
+            name: "Image2",
             selected: false
         },
         {
